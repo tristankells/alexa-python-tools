@@ -1,0 +1,586 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "expert assistant",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetClientContactsIntent",
+                    "slots": [
+                        {
+                            "name": "Client",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "who the contact {Client}",
+                        "who the contact for {Client}",
+                        "for the contact number for {Client}",
+                        "who the contact for {Client} is",
+                        "the contact number for {Client}",
+                        "for the contact for {Client}",
+                        "i want info about the contacts for {Client}",
+                        "give me the contacts for {Client}",
+                        "can i please have the contact number for {Client}",
+                        "{Client} contact number",
+                        "give me the contact for {Client}",
+                        "what is the contact number for {Client}",
+                        "who are the contacts for {Client}",
+                        "who is the contact for {Client}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetCaseAppointmentsIntent",
+                    "slots": [],
+                    "samples": [
+                        "appointments",
+                        "what are my appointments today",
+                        "do i have any case appointments",
+                        "what case appointments do i have",
+                        "appointments today",
+                        "do i have any upcoming case appointments ",
+                        "do i have any upcoming appointments"
+                    ]
+                },
+                {
+                    "name": "StartTimerIntent",
+                    "slots": [
+                        {
+                            "name": "CallSignA",
+                            "type": "LETTER_OR_NUMBER"
+                        },
+                        {
+                            "name": "CallSignB",
+                            "type": "LETTER_OR_NUMBER"
+                        },
+                        {
+                            "name": "CallSignC",
+                            "type": "LETTER_OR_NUMBER"
+                        },
+                        {
+                            "name": "CallSignD",
+                            "type": "LETTER_OR_NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "begin a timer",
+                        "begin a timer for {CallSignA}",
+                        "begin a timer for {CallSignA} {CallSignB}",
+                        "begin a timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "begin a timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "begin a matter {CallSignA} timer",
+                        "begin a matter {CallSignA} {CallSignB} timer",
+                        "begin a matter {CallSignA} {CallSignB} {CallSignC} timer",
+                        "begin a matter {CallSignA} {CallSignB} {CallSignC} {CallSignD}  timer",
+                        "begin a timer for matter {CallSignA}",
+                        "begin a timer for matter {CallSignA} {CallSignB}",
+                        "begin a timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "begin a timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "begin a matter timer for matter {CallSignA} ",
+                        "begin a matter timer for matter {CallSignA} {CallSignB}",
+                        "begin a matter timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "begin a matter timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "begin a matter timer for {CallSignA} ",
+                        "begin a matter timer for {CallSignA} {CallSignB}",
+                        "begin a matter timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "begin a matter timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "begin timer",
+                        "begin timer for {CallSignA} ",
+                        "begin timer for {CallSignA} {CallSignB}",
+                        "begin timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "begin timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "begin timer for matter {CallSignA} ",
+                        "begin timer for matter {CallSignA} {CallSignB}",
+                        "begin timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "begin timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "begin matter {CallSignA}  timer",
+                        "begin matter {CallSignA} {CallSignB} timer",
+                        "begin matter {CallSignA} {CallSignB} {CallSignC} timer",
+                        "begin matter {CallSignA} {CallSignB} {CallSignC} {CallSignD}  timer",
+                        "begin matter timer for matter {CallSignA} ",
+                        "begin matter timer for matter {CallSignA} {CallSignB}",
+                        "begin matter timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "begin matter timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "begin matter timer for {CallSignA} ",
+                        "begin matter timer for {CallSignA} {CallSignB}",
+                        "begin matter timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "begin matter timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "start a timer",
+                        "start a timer for {CallSignA}",
+                        "start a timer for {CallSignA} {CallSignB}",
+                        "start a timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "start a timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "start a matter {CallSignA} timer",
+                        "start a matter {CallSignA} {CallSignB} timer",
+                        "start a matter {CallSignA} {CallSignB} {CallSignC} timer",
+                        "start a matter {CallSignA} {CallSignB} {CallSignC} {CallSignD}  timer",
+                        "start a timer for matter {CallSignA}",
+                        "start a timer for matter {CallSignA} {CallSignB}",
+                        "start a timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "start a timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "start a matter timer for matter {CallSignA} ",
+                        "start a matter timer for matter {CallSignA} {CallSignB}",
+                        "start a matter timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "start a matter timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "start a matter timer for {CallSignA} ",
+                        "start a matter timer for {CallSignA} {CallSignB}",
+                        "start a matter timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "start a matter timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "start timer",
+                        "start timer for {CallSignA} ",
+                        "start timer for {CallSignA} {CallSignB}",
+                        "start timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "start timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "start timer for matter {CallSignA} ",
+                        "start timer for matter {CallSignA} {CallSignB}",
+                        "start timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "start timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "start matter {CallSignA}  timer",
+                        "start matter {CallSignA} {CallSignB} timer",
+                        "start matter {CallSignA} {CallSignB} {CallSignC} timer",
+                        "start matter {CallSignA} {CallSignB} {CallSignC} {CallSignD}  timer",
+                        "start matter timer for matter {CallSignA} ",
+                        "start matter timer for matter {CallSignA} {CallSignB}",
+                        "start matter timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "start matter timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "start matter timer for {CallSignA} ",
+                        "start matter timer for {CallSignA} {CallSignB}",
+                        "start matter timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "start matter timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "launch a timer",
+                        "launch a timer for {CallSignA}",
+                        "launch a timer for {CallSignA} {CallSignB}",
+                        "launch a timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "launch a timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "launch a matter {CallSignA} timer",
+                        "launch a matter {CallSignA} {CallSignB} timer",
+                        "launch a matter {CallSignA} {CallSignB} {CallSignC} timer",
+                        "launch a matter {CallSignA} {CallSignB} {CallSignC} {CallSignD}  timer",
+                        "launch a timer for matter {CallSignA}",
+                        "launch a timer for matter {CallSignA} {CallSignB}",
+                        "launch a timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "launch a timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "launch a matter timer for matter {CallSignA} ",
+                        "launch a matter timer for matter {CallSignA} {CallSignB}",
+                        "launch a matter timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "launch a matter timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "launch a matter timer for {CallSignA} ",
+                        "launch a matter timer for {CallSignA} {CallSignB}",
+                        "launch a matter timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "launch a matter timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "launch timer",
+                        "launch timer for {CallSignA} ",
+                        "launch timer for {CallSignA} {CallSignB}",
+                        "launch timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "launch timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "launch timer for matter {CallSignA} ",
+                        "launch timer for matter {CallSignA} {CallSignB}",
+                        "launch timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "launch timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "launch matter {CallSignA}  timer",
+                        "launch matter {CallSignA} {CallSignB} timer",
+                        "launch matter {CallSignA} {CallSignB} {CallSignC} timer",
+                        "launch matter {CallSignA} {CallSignB} {CallSignC} {CallSignD}  timer",
+                        "launch matter timer for matter {CallSignA} ",
+                        "launch matter timer for matter {CallSignA} {CallSignB}",
+                        "launch matter timer for matter {CallSignA} {CallSignB} {CallSignC}",
+                        "launch matter timer for matter {CallSignA} {CallSignB} {CallSignC} {CallSignD} ",
+                        "launch matter timer for {CallSignA} ",
+                        "launch matter timer for {CallSignA} {CallSignB}",
+                        "launch matter timer for {CallSignA} {CallSignB} {CallSignC}",
+                        "launch matter timer for {CallSignA} {CallSignB} {CallSignC} {CallSignD} "
+                    ]
+                },
+                {
+                    "name": "FinishTimerIntent",
+                    "slots": [],
+                    "samples": [
+                        "finish stopwatch",
+                        "stop stopwatch",
+                        "stop timer",
+                        "end timer",
+                        "finish timer",
+                        "complete current timer"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PauseTimer",
+                    "slots": [],
+                    "samples": [
+                        "timer pause",
+                        "timer pause please",
+                        "please pause timer please",
+                        "pause timer please",
+                        "please pause timer",
+                        "pause current timer",
+                        "pause timer",
+                        "pause"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LETTER_OR_NUMBER",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "A"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "D"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "E"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "F"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "G"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "I"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "J"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "L"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "M"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "N"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "O"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "P"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Q"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "R"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "S"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "T"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "U"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "V"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "W"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "X"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Y"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Z"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zero"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "four"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "five"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "six"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "seven"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alfa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alpha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bravo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "charlie"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "delta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "echo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "foxtrot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "golf"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hotel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "india"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "juliett"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "juliet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kilo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lima"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mike"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "november"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oscar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "papa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "quebec"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "romeo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sierra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tango"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uniform"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "victor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "whiskey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "x-ray"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "xray"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yankee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zulu"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
